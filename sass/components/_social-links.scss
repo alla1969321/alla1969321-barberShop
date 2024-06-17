@@ -1,0 +1,32 @@
+.social-links {
+  @extend %link;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--subtitle-light-theme);
+
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.hero-list::before,
+.footer-list::before {
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 20px;
+  }
+  flex-shrink: 0;
+
+  background-color: var(--subtitle-light-theme);
+}

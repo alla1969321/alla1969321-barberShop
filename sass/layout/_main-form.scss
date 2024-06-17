@@ -1,0 +1,110 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.15;
+
+  letter-spacing: 0.03em;
+
+  color: var(--subtitle-light-theme);
+
+  text-align: center;
+  margin-bottom: 12px;
+}
+.form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-color);
+  margin-bottom: 6px;
+
+  .form-field:focus-within & {
+    color: var(--accent-color);
+  }
+  transition: color 250ms linear;
+}
+.form-input,
+.message-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 35px;
+  margin-bottom: 10px;
+
+  &:focus-within {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+  transition: border 250ms linear;
+}
+.message-input {
+  resize: none;
+  height: 120px;
+
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    color: var(--description-dark-theme);
+  }
+}
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+  margin-right: 4px;
+}
+.policy-link {
+  color: var(--accent-color);
+}
+.icon-checkbox {
+  background-image: url('../images/checkbox.svg');
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+
+  .checkbox-input:focus + & {
+    box-shadow: 0 0 0 0.1em var(--accent-color);
+  }
+  .checkbox-input:checked + & {
+    background-image: url('../images/icon-check.svg');
+    background-repeat: no-repeat;
+  }
+  transition: box-shadow 250ms linear;
+}
+.main-form-send-btn {
+  align-self: center;
+}
+.icon-container {
+  display: block;
+  position: relative;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  .form-field:focus-within & {
+    fill: var(--accent-color);
+  }
+  transition: fill 250ms linear;
+}

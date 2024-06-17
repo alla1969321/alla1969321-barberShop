@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Барбершоп</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+   <!--header-->
+   <header class="header">
+      <div class="container">
+         <nav class="navigation">
+            <a class="logo animate__pulse" href="/">
+               <svg class="icon-logo" width="68" height="55" aria-label="Логотип компании">
+                  <use href="./images/sprite.svg#logo"></use>
+               </svg>
+            </a>
+            <ul class="navigation-list">
+               <li class="navigation-list-item">
+                  <a class="navigation-list-links" href="#about">О нас</a>
+               </li>
+               <li class="navigation-list-item">
+                  <a class="navigation-list-links" href="#services">Услуги и цены</a>
+               </li>
+               <li class="navigation-list-item">
+                  <a class="navigation-list-links" href="#masters">Мастера</a>
+               </li>
+               <li class="navigation-list-item">
+                  <a class="navigation-list-links" href="#contacts">Контакты</a>
+               </li>
+            </ul>
+         </nav> 
+         <button class="burger-btn" type="button">
+            <svg class="burger-icon">
+               <use href="./images/sprite.svg#mobile-menu"></use>
+            </svg>
+         </button>
+               <div class="header-tel-link-container">
+                  <a class="navigation-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+               <button class="modal-btn modal-btn-dark-theme" data-modal-open type="button">онлайн-запись</button>
+               </div>
+      </div>
+   </header>
+
+   <!--MAIN-->
+   <main>
+      <!--HERO-->
+      <section class="hero">
+         <div class="container">
+
+            <div class="hero-left-side">
+               <ul class="hero-list">
+                  <li class="hero-list-item">
+                     <a class="social-links" href="#" aria-label="Instagram">Instagram</a>
+                  </li>
+                  <li class="hero-list-item">
+                     <a class="social-links" href="#" aria-label="Youtube">Youtube</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="hero-right-side">
+               <div class="hero-thumb-text">
+                  <p class="subtitle subtitle-dark-theme" lang="en">A hair salon for men in Kyiv</p>
+               <h1 class="main-title animate__pulse" lang="en">BarberShop</h1>
+               <p class="description description-dark-theme">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <!--ABOUT-->
+      <section class="about section-padding" id="about">
+         <div class="container">
+               <div class="about-left-site">
+                  <ul class="about-list">
+                     <li class="about-list-item">
+
+                        <picture>
+                           <source 
+                           srcset="./images/about/about-desktop-1.webp 1x, ./images/about/about-desktop-1@2x.webp 2x" 
+                           media="(min-width: 1280px)" type="image/webp">
+                           <source 
+                           srcset="./images/about/about-desktop-1.jpg 1x, ./images/about/about-desktop-1@2x.jpg 2x" 
+                           media="(min-width: 1280px)">
+            
+                           <source 
+                           srcset="./images/about/abot-tablet-1.webp 1x, ./images/about/abot-tablet-1@2x.webp 2x" 
+                           media="(min-width: 768px)" type="image/webp">
+                           <source 
+                           srcset="./images/about/abot-tablet-1.jpg1x, ./images/about/abot-tablet-1@2x.jpg 2x" 
+                           media="(min-width: 768px)">
+            
+                           <img class="about-img" src="./images/about/abot-tablet-1.jpg" alt="Мастер намазывает шею клиенту пенкой">
+                        </picture>
+                     </li>
+
+                     <li class="about-list-item">
+                        <picture>
+                           <source 
+                           srcset="./images/about/about-desktop-2.webp 1x, ./images/about/about-desktop-2@2x.webp 2x" 
+                           media="(min-width: 1280px)" type="image/webp">
+                           <source 
+                           srcset="./images/about/about-desktop-2.jpg 1x, ./images/about/about-desktop-2@2x.jpg 2x" 
+                           media="(min-width: 1280px)">
+            
+                           <source 
+                           srcset="./images/about/abot-tablet-2.webp 1x, ./images/about/abot-tablet-2@2x.webp 2x" 
+                           media="(min-width: 768px)" type="image/webp">
+                           <source 
+                           srcset="./images/about/abot-tablet-2.jpg1x, ./images/about/abot-tablet-2@2x.jpg 2x" 
+                           media="(min-width: 768px)">
+            
+                           <img class="about-img" src="./images/about/abot-tablet-2.jpg" alt="Мастер подбривает затылок клиенту">
+                        </picture>
+                     </li>
+                  </ul>
+               </div>
+               
+               <div class="about-rigth-side">
+                  <p class="subtitle subtitle-light-theme">О НАС</p>
+                  <h2 class="title title-light-theme">Лучший Барбершоп твоего города</h2>
+                  <p class="description description-light-theme">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                  <p class="about-text">
+                        Мы команда, которая никогда не останавливается на достигнутом 
+                        и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
+                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+                  </p>
+            <button class="modal-btn modal-btn-light-theme" data-modal-open-about type="button">онлайн-запись</button>
+               </div>
+         </div>
+      </section>
+
+      <!--SERVICES-->
+      <section class="services section-padding" id="services">
+         <div class="container">
+            <p class="subtitle subtitle-dark-theme">Проведи время в компании лучших мастеров</p>
+            <h2 class="title title-dark-theme">Услуги и цены</h2>
+               <div class="services-flex-container">
+
+                  <div class="services-left-side">
+                     <ul class="services-list">
+                        <li class="services-list-item">
+                           <span class="description">Мужская стрижка</span><span class="description">от 300 грн.</span>
+                        </li>
+                        <li class="services-list-item">
+                           <span class="description">Стрижка бороды</span><span class="description">от 200 грн.</span>
+                        </li>
+                        <li class="services-list-item">
+                           <span class="description">Стрижка усов</span><span class="description">от 200 грн.</span>
+                        </li>
+                        <li class="services-list-item">
+                           <span class="description">Бритье опасной бритвой</span><span class="description">от 200 грн.</span>
+                        </li>
+                     </ul>
+                  </div>
+                  
+                  <div class="services-rigth-side">
+                     <ul class="services-list">
+                        <li class="services-list-item">
+                           <span class="description">Cтрижка у стажера</span><span class="description">от 50 грн.</span>
+                        </li>
+                        <li class="services-list-item">
+                           <span class="description">Стрижка под насадку</span><span class="description">от 200 грн.</span>
+                        </li>
+                        <li class="services-list-item">
+                           <span class="description">Детская стрижка (до 12 лет)</span><span class="description">от 300 грн.</span>
+                        </li>
+                        <li class="services-list-item">
+                           <span class="description">Камуфлирование седины</span><span class="description">от 200 грн.</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+                     <button class="modal-btn modal-btn-dark-theme" data-modal-open-serv type="button">онлайн-запись</button>
+         </div>
+      </section>
+
+      <!--Achievements-->
+      <section class="achievements section-padding">
+         <div class="container">
+            
+            <div class="achievements-flex-container">
+               <div class="achievements-left-side">
+                  <ul class="achievements-list">
+                     <li class="achievements-list-item">
+                        <p class="achievements-list-counter second">600</p>
+                        <p class="achievements-text">Довольных клиентов в день</p>
+                     </li>
+                     <li class="achievements-list-item">
+                        <p class="achievements-list-counter first">50</p>
+                        <p class="achievements-text">Наград за отличный сервис </p>
+                     </li>
+                     <li class="achievements-list-item">
+                        <p class="achievements-list-counter first">20</p>
+                        <p class="achievements-text">Лучших мастеров Киева </p>
+                     </li>
+                     <li class="achievements-list-item">
+                        <p class="achievements-list-counter second">100</p>
+                        <p class="achievements-text">Подарков постоянным клиентам</p>
+                     </li>
+                  </ul>
+               </div>
+   
+               <div class="achievements-rigth-side">
+                  <p class="subtitle subtitle-light-theme">старая традиционная школа</p>
+               <h2 class="title title-light-theme">Почему приходят именно к нам?</h2>
+               <p class="description description-light-theme">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <!--MASTERS-->
+      <section class="masters section-padding" id="masters">
+         <div class="container">
+            <p class="subtitle subtitle-light-theme">для настоящих ценителей атмосферы</p>
+            <h2 class="title title-light-theme">Наши мастера</h2>
+            <ul class="masters-list">
+               <li class="masters-list-item">
+
+                  <picture>
+                     <source 
+                     srcset="./images/masters/masters-desktop-1.webp 1x, ./images/masters/masters-desktop-1@2x.webp 2x" 
+                     media="(min-width: 1280px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-desktop-1.jpg 1x, ./images/masters/masters-desktop-1@2x.jpg 2x" 
+                     media="(min-width: 1200px)">
+      
+                     <source 
+                     srcset="./images/masters/masters-tablet-1.webp 1x, ./images/masters/masters-tablet-1@2x.webp 2x" 
+                     media="(min-width: 768px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-tablet-1.jpg 1x, ./images/masters/masters-tablet-1@2x.jpg 2x" 
+                     media="(min-width: 768px)">
+      
+      
+                     <source 
+                     srcset="./images/masters/masters-mobile-1.webp 1x, ./images/masters/masters-mobile-1@2x.webp 2x" 
+                     media="(min-width: 320px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-mobile-1.jpg 1x, ./images/masters/masters-mobile-1@2x.jpg 2x" 
+                     media="(min-width: 320px)">
+                     <img class="masters-img" src="./images/masters/masters-mobile-1.jpg" alt="Джон подбривает шею клиенту">
+                  </picture>
+
+                     <div class="masters-contct">
+                        <h3 class="master-name" lang="en">John Smith</h3>
+                        <p class="master-profession" lang="en">Extreme Barber</p>
+
+                        <ul class="social-list">
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Инстаграм">
+                                 <use href="./images/sprite.svg#instagram"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Твитер">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Фейсбук">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Линкидын">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                 </svg>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+               </li>
+               <li class="masters-list-item">
+
+                  <picture>
+                     <source 
+                     srcset="./images/masters/masters-desktop-2.webp 1x, ./images/masters/masters-desktop-2@2x.webp 2x" 
+                     media="(min-width: 1280px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-desktop-2.jpg 1x, ./images/masters/masters-desktop-2@2x.jpg 2x" 
+                     media="(min-width: 1200px)">
+      
+                     <source 
+                     srcset="./images/masters/masters-tablet-2.webp 1x, ./images/masters/masters-tablet-2@2x.webp 2x" 
+                     media="(min-width: 768px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-tablet-2.jpg 1x, ./images/masters/masters-tablet-2@2x.jpg 2x" 
+                     media="(min-width: 768px)">
+      
+      
+                     <source 
+                     srcset="./images/masters/masters-mobile-2.webp 1x, ./images/masters/masters-mobile-2@2x.webp 2x" 
+                     media="(min-width: 320px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-mobile-2.jpg 1x, ./images/masters/masters-mobile-2@2x.jpg 2x" 
+                     media="(min-width: 320px)">
+                     <img class="masters-img" src="./images/masters/masters-mobile-2.jpg" alt="Мишель смотрит на клиента и держит его за голову">
+                  </picture>
+
+                     <div class="masters-contct">
+                        <h3 class="master-name" lang="en">Michele Doe</h3>
+                        <p class="master-profession" lang="en">Extreme Barber</p>
+
+                        <ul class="social-list">
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Инстаграм">
+                                 <use href="./images/sprite.svg#instagram"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Твитер">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Фейсбук">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Линкидын">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                 </svg>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+               </li>
+               <li class="masters-list-item">
+
+                  <picture>
+                     <source 
+                     srcset="./images/masters/masters-desktop-3.webp 1x, ./images/masters/masters-desktop-3@2x.webp 2x" 
+                     media="(min-width: 1280px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-desktop-3.jpg 1x, ./images/masters/masters-desktop-3@2x.jpg 2x" 
+                     media="(min-width: 1200px)">
+      
+                     <source 
+                     srcset="./images/masters/masters-tablet-3.webp 1x, ./images/masters/masters-tablet-3@2x.webp 2x" 
+                     media="(min-width: 768px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-tablet-3.jpg 1x, ./images/masters/masters-tablet-3@2x.jpg 2x" 
+                     media="(min-width: 768px)">
+      
+      
+                     <source 
+                     srcset="./images/masters/masters-mobile-3.webp 1x, ./images/masters/masters-mobile-3@2x.webp 2x" 
+                     media="(min-width: 320px)" type="image/webp">
+                     <source 
+                     srcset="./images/masters/masters-mobile-3.jpg 1x, ./images/masters/masters-mobile-3@2x.jpg 2x" 
+                     media="(min-width: 320px)">
+                     <img class="masters-img" src="./images/masters/masters-mobile-3.jpg" alt="Алан стрижет чёлку клиенту">
+                  </picture>
+
+                     <div class="masters-contct">
+                        <h3 class="master-name" lang="en">Alan Black</h3>
+                        <p class="master-profession" lang="en">Extreme Barber</p>
+
+                        <ul class="social-list">
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Инстаграм">
+                                 <use href="./images/sprite.svg#instagram"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Твитер">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Фейсбук">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                 </svg>
+                              </a>
+                           </li>
+
+                           <li class="social-item">
+                              <a href="" class="social-link">
+                                 <svg class="social-icon" width="20" height="20" aria-label="иконка Линкидын">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                 </svg>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <!--GALLARY-->
+      <section class="gallary section-padding">
+            <div class="container">
+               <p class="subtitle subtitle-light-theme">На латинском языке “барба” означает “борода”</p>
+               <h2 class="visually-hidden">Галерея</h2>
+               <ul class="gallary-list">
+
+                  <li class="gallary-list-item">
+                     <picture>
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-1.webp 1x, ./images/portfolio/portfolio-desktop-1@2x.webp 2x" 
+                        media="(min-width: 1280px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-1.jpg 1x, ./images/portfolio/portfolio-desktop-1@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-1.webp 1x, ./images/portfolio/portfolio-tablet-1@2x.webp 2x" 
+                        media="(min-width: 768px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-1.jpg 1x, ./images/portfolio/portfolio-tablet-1@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-1.webp 1x, ./images/portfolio/portfolio-mobile-1.webp 2x" 
+                        media="(min-width: 320px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-1.jpg 1x, ./images/portfolio/portfolio-mobile-1@2x.jpg 2x" 
+                        media="(min-width: 320px)">
+                        <img class="gallary-img" src="./images/portfolio/portfolio-mobile-1.jpg" alt="Мастер стрижет голову клиенту">
+                     </picture>
+                  </li>
+
+                  <li class="gallary-list-item">
+                     <picture>
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-2.webp 1x, ./images/portfolio/portfolio-desktop-2@2x.webp 2x" 
+                        media="(min-width: 1280px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-2.jpg 1x, ./images/portfolio/portfolio-desktop-2@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-2.webp 1x, ./images/portfolio/portfolio-tablet-2@2x.webp 2x" 
+                        media="(min-width: 768px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-2.jpg 1x, ./images/portfolio/portfolio-tablet-2@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-2.webp 1x, ./images/portfolio/portfolio-mobile-2.webp 2x" 
+                        media="(min-width: 320px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-2.jpg 1x, ./images/portfolio/portfolio-mobile-2@2x.jpg 2x" 
+                        media="(min-width: 320px)">
+                        <img class="gallary-img" src="./images/portfolio/portf-ing-2.jpg" alt="Мастер насит пену на бороду клиенту">
+                     </picture>
+                  </li>
+
+                  <li class="gallary-list-item">
+                     <picture>
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-3.webp 1x, ./images/portfolio/portfolio-desktop-3@2x.webp 2x" 
+                        media="(min-width: 1280px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-3.jpg 1x, ./images/portfolio/portfolio-desktop-3@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-3.webp 1x, ./images/portfolio/portfolio-tablet-3@2x.webp 2x" 
+                        media="(min-width: 768px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-3.jpg 1x, ./images/portfolio/portfolio-tablet-3@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-3.webp 1x, ./images/portfolio/portfolio-mobile-3.webp 2x" 
+                        media="(min-width: 320px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-3.jpg 1x, ./images/portfolio/portfolio-mobile-3@2x.jpg 2x" 
+                        media="(min-width: 320px)">
+                        <img class="gallary-img" src="./images/portfolio/portfolio-mobile-3.jpg" alt="Мастер положил полотенце на лицо клиента">
+                     </picture>
+                  </li>
+
+                  <li class="gallary-list-item">
+                     <picture>
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-4.webp 1x, ./images/portfolio/portfolio-desktop-4@2x.webp 2x" 
+                        media="(min-width: 1280px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-desktop-4.jpg 1x, ./images/portfolio/portfolio-desktop-4@2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-4.webp 1x, ./images/portfolio/portfolio-tablet-4@2x.webp 2x" 
+                        media="(min-width: 768px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-tablet-4.jpg 1x, ./images/portfolio/portfolio-tablet-4@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+         
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-4.webp 1x, ./images/portfolio/portfolio-mobile-4.webp 2x" 
+                        media="(min-width: 320px)" type="image/webp">
+                        <source 
+                        srcset="./images/portfolio/portfolio-mobile-4.jpg 1x, ./images/portfolio/portfolio-mobile-4@2x.jpg 2x" 
+                        media="(min-width: 320px)">
+                        <img class="gallary-img" src="./images/portfolio/portfolio-mobile-4.jpg" alt="Мастер бреет затылок">
+                     </picture>
+                  </li>
+               </ul>
+            </div>
+      </section>
+
+      <!--FORM-->
+            <div class="form-contacts-flex-container">
+               <section class="form-section section-padding">
+                  <div class="container">
+                     <h2 class="title title-dark-theme">Онлайн-запись</h2>
+
+                  <form action="#" class="form" autocomplete="off">
+
+                     <input class="name-field" type="text" name="user-name" placeholder="Имя*" required minlength="2">
+
+                     <input class="phone-field" type="tel" name="user-phone" placeholder="Телефон*" required>
+
+                     <textarea class="message" name="message" placeholder="сообщение"></textarea>
+
+                     <button class="modal-btn modal-btn-dark-theme">отправить</button>
+
+                  </form>
+                  </div>
+         </section>
+
+         <!--CONTACTS-->
+         <section class="contact-information section-padding" id="contacts">
+                  <div class="container">
+                     <h2 class="title title-dark-theme">Контакты</h2>
+                  <div class="contact-flex-container">
+                     <address class="address">
+                        <ul class="contact-information-list">
+                           <li class="contact-information-list-item">
+                              <svg class="address-icon" width="24" height="24">
+                                 <use href="./images/sprite.svg#map-pin"></use>
+                              </svg>
+                              <a class="contact-information-list-link top" href="https://goo.gl/maps/ZUuKSTHJiKb3vLzi6" target="_blank">ул. Васильковая, 7А Киев, 08132</a>
+                           </li>
+
+                           <li class="contact-information-list-item">
+                              <svg class="address-icon" width="24" height="24">
+                                 <use href="./images/sprite.svg#phone"></use>
+                              </svg>
+                              <a class="contact-information-list-link" href="tel:+380441111111">+38 044 111 11 11</a>
+                           </li>
+
+                           <li class="contact-information-list-item">
+                              <svg class="address-icon" width="24" height="24">
+                                 <use href="./images/sprite.svg#mail"></use>
+                              </svg>
+                              <a class="contact-information-list-link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                           </li>
+                        </ul>
+                     </address>
+                     <div class="contacts-right-site">
+                        <p class="subtitle">время работы</p>
+                        <p class="description description-dark-theme">Ежедневно с 9:00 до 22:00 </p>
+                     </div>
+                  </div>
+                  </div>
+      </section>
+            </div>
+   </main>
+
+   <!--FOOTER-->
+   <footer class="footer">
+      <div class="container">
+         <p class="copy">&copy; Copyright 2020</p>
+         <ul class="footer-list">
+            <li class="footer-list-item">
+               <a class="social-links" href="#" aria-label="Instagram">Instagram</a>
+            </li>
+            <li class="footer-list-item">
+               <a class="social-links" href="#" aria-label="Youtube">Youtube</a>
+            </li>
+         </ul>
+      </div>
+   </footer>
+
+   <!--!Модельное окно-->
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button class="modal-close-btn" data-modal-close type="button">
+            <svg class="icon-close-btn" width="30" height="30" aria-label="Крестик закрытия">
+               <use href="./images/sprite.svg#close"></use>
+            </svg>
+         </button>
+
+         <!--main-form-->
+         <form action="#" class="main-form" autocomplete="off">
+            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+
+            <!--Name-->
+            <label class="form-field">
+               <span class="form-label">Имя</span>
+               <span class="icon-container">
+                  <input class="form-input" type="text" name="user-name" required minlength="2">
+               <svg class="form-icon" width="18" height="18" aria-label="человечек">
+                  <use href="./images/sprite.svg#name"></use>
+               </svg>
+               </span>
+            </label>
+            
+            <!--Phone-->
+            <label class="form-field">
+               <span class="form-label">Телефон</span>
+               <span class="icon-container">
+                  <input class="form-input" type="tel" name="user-phone" required>
+               <svg class="form-icon" width="18" height="18" aria-label="трубка телефона">
+                  <use href="./images/sprite.svg#phone-form"></use>
+               </svg>
+               </span>
+            </label>
+
+            <!--Mail-->
+            <label class="form-field">
+               <span class="form-label">Почта</span>
+               <span class="icon-container">
+                  <input class="form-input" type="email" name="user-mail" required>
+               <svg class="form-icon" width="18" height="18" aria-label="конверт">
+                  <use href="./images/sprite.svg#email-form"></use>
+               </svg>
+               </span>
+            </label>
+
+            <!-- Message-->
+            <label class="form-field">
+               <span class="form-label">Комментарий</span>
+               <textarea class="message-input" name="message" placeholder="Введите текст"></textarea>
+            </label>
+
+            <!--Checkbox-->
+            <label class="checkbox-field">
+               <input class="checkbox-input visually-hidden" type="checkbox" name="policy">
+               <span class="icon-checkbox"></span>
+               <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю</span><a class="policy-link" href="#">Условия договора</a>
+            </label>
+
+            <!--Sent BTN-->
+            <button class="main-form-send-btn modal-btn" type="submit">Отправить</button>
+
+         </form>
+      </div>
+   </div>
+
+   <script src="./js/modal.js"></script>
+</body>
+</html>
